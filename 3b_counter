@@ -72,9 +72,9 @@ three output LEDs --  red (PF1), blue (PF2), and green (PF3).
 
 #define 	SW1	     		GPIO_PIN_4		// PF4
 #define 	SW2      		GPIO_PIN_0		// PF0
-#define 	red_LED           GPIO_PIN_1		// PF1 (0x02)
-#define 	blue_LED          GPIO_PIN_2		// PF2 (0x04)
-#define green_LED					GPIO_PIN_3   // PF3 (0x08)
+#define 	red_LED           	GPIO_PIN_1		// PF1 (0x02)
+#define 	blue_LED          	GPIO_PIN_2		// PF2 (0x04)
+#define 	green_LED		GPIO_PIN_3   		// PF3 (0x08)
 
 //*****************************************************************************
 
@@ -106,8 +106,8 @@ void PortFunctionInit(void)
 //The code below should be manually added by the programmer
 //*************************************************************
 		
-     //Enable pull-up on PF0
-     GPIO_PORTF_PUR_R |= 0x11; 	
+  //Enable pull-up on PF0
+  GPIO_PORTF_PUR_R |= 0x11; 	
 }
 
 void
